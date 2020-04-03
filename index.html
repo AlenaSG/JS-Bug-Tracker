@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Bug Tracker</title>
+    <!-- Font Awesome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <svg class="bi bi-watch" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 012 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0114 8a5.985 5.985 0 01-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 103 8a5 5 0 0010 0z" clip-rule="evenodd"/>
+        <rect width="1" height="2" x="13.5" y="7" rx=".5"/>
+        <path fill-rule="evenodd" d="M8 4.5a.5.5 0 01.5.5v3a.5.5 0 01-.5.5H6a.5.5 0 010-1h1.5V5a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
+        </svg>
+        JS Bug Tracker <small>by AlenaSG</small>
+      </h1>
+      <div class="jumbotron">
+        <h3>Add New Issue:</h3>
+        <form id="issueInputForm">
+          <div class="form-group">
+            <label for="issueDescInput">Description</label>
+            <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue...">
+          </div>
+          <div class="form-group">
+            <label for="issuePriorityInput">Priority</label>
+            <select id="issuePriorityInput" class="form-control">
+              <option value="Low">Low<option>
+              <option value="Medium">Medium<option>
+              <option value="High">High<option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="issueAssignedToInput">Assigned To</label>
+            <input type="text" class="form-control" id="issueAssignedToInput" placeholder="Enter responsible...">
+          </div>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+      </div>
+      <div class="col-lg-12">
+        <div id="issuesList">
+        </div>
+      </div>
+      <div class="footer">
+        <p>&copy AlenaSG</i></p>
+      </div>
+    </div>
+    <!-- links for scripts -->
+
+    <!-- font-awesome async link-->
+    <!-- <script src="https://use.fontawesome.com/6cdc1f92f5.js"></script> -->
+
+    <!-- jq, popper, bootstrap js for bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- chance  use chance.guid() to generate ID-->
+    <script src="https://chancejs.com/chance.min.js"></script>
+    <!-- my js file -->
+    <script src="main.js"></script>
+  </body>
+</html>
